@@ -1,0 +1,169 @@
+/* 头部 */
+.header{
+  background-color: rgb(250, 238, 238);
+  border-radius: 30rpx;
+  height: 80rpx;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.search{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid gray;
+  border-radius: 30rpx;
+  text-align: center;
+}
+.search input{
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.name{
+  width: 280rpx;
+  font-size: smaller;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.header_right{
+  padding-right: 20rpx;
+  color: gray;
+  font-size: small;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.header_left .car{
+  padding-left: 60rpx;
+  font-weight: 600;
+  font-size: small;
+}
+.header_left image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 55%;
+  margin-top: -30rpx;
+  left: 20rpx;
+}
+.header_left{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+}
+/* 列表 */
+.noneCar{
+  text-align: center;
+  height: 300rpx;
+  line-height: 300rpx;
+  /* background-color: gray; */
+  border: 1px solid gray;
+}
+.delet{
+  position:absolute;
+  top:80rpx;
+  right:80rpx;
+}
+.list{
+  background-color: rgb(250, 238, 238);
+  border-radius: 30rpx;
+  margin-top:10rpx;
+  margin-bottom: 70rpx;
+}
+.list_item{
+  position: relative;
+  display: flex;
+  height: 220rpx;
+  line-height: 220rpx;
+}
+.list_item_left{
+  flex: 1;
+}
+.list_item_middle{
+  flex: 3;
+}
+.list_item_middle image{
+  border-radius: 30rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.list_item_right{
+  flex: 6;
+}
+.list_item_right1{
+/* background-color: gray; */
+height: 150rpx;
+display: flex; 
+flex-direction: column;
+justify-content: space-between;
+}
+.list_item_right1 text{
+  margin-top: 10rpx;
+  font-size: small;
+  /* background-color: pink; */
+  line-height:30rpx;
+  display: block;
+  height: 30rpx;
+}
+.list_item{
+  margin-bottom: 10rpx;
+  border: 1px solid gray;
+  border-radius: 30rpx;
+}
+.right{
+  display: flex;
+}
+.list_item_right2{
+  /* background-color: pink; */
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 底部 */
+.footer{
+  margin-bottom: 10rpx;
+  background-color: rgb(250, 238, 238);
+  border-top: 1px solid gray;
+  display: flex;
+  /* background-color: gray; */
+  height: 120rpx;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.computed{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.allBuy{
+  margin-top: 20%;
+  border-radius: 50rpx;
+}
+.buy{
+  width: 170rpx;
+  line-height: 120rpx;
+}
+.small{
+  font-size: smaller;
+  float: right;
+}
+.computed_1{
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: smaller;
+  color: gray;
+}
+.allPrice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.money{
+  color: #d81e06;
+}

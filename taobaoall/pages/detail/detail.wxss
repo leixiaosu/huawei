@@ -1,0 +1,79 @@
+
+
+.img{
+  height: 500rpx;
+  width: 100%;
+  border: 1px solid gray;
+}
+.img image{
+  border-radius: 30rpx;
+  height: 500rpx;
+}
+.bar1{
+  color: red;
+  font-size: x-large;
+  margin:20rpx 20rpx;
+}
+.bar2{
+  border-top:1px solid gray ;
+  font-weight: 600;
+}
+.bar3{
+  border-top:1px solid gray ;
+  padding-top: 20rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.bar4{
+  display: flex;
+  justify-content:flex-start;
+  border-top: 1px solid gray;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.qi{
+  margin-left: 40rpx;
+}
+/* 底部 */
+.footer{
+  display: flex;
+  text-align: center;
+  height: 200rpx;
+  background-color: gray;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 180rpx;
+}
+.f1{
+  display: flex;
+  align-items: center;
+  /* height: 150rpx; */
+}
+.f1 .img{
+  height: 60rpx;
+  width: 60rpx;
+}
+.blk{
+  display: block;
+}
+.f2{
+
+}
+.f3{
+
+}
+.f4{
+
+}
+button{
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  padding: 0 10rpx;
+}
+.f5{
+
+}

@@ -1,0 +1,24 @@
+.main_item{
+  margin-top: 10rpx;
+  height: 200rpx;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 200rpx;
+  border: 1px solid gray;
+  border-radius: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+image{
+  margin-top: 20%;
+  width: 150rpx;
+  height: 150rpx;
+}
+.name{
+  width: 200rpx;
+  font-size: smaller;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

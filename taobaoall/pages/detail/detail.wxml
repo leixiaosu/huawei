@@ -1,0 +1,50 @@
+<view class="main"> 
+<!-- 照片 -->
+<view class="img">
+<image src="{{detailList.goods_big_logo}}"></image>
+</view>
+<!-- bar1 -->
+<view class="bar1">
+<text>${{detailList.goods_price}}元</text>
+</view>
+<!-- bar2 -->
+<view class="bar2">
+<text>{{detailList.goods_name}}</text>
+</view>
+<view class="bar3">
+<text>推荐</text>
+<text>帮我选 </text>
+<text>分享</text>
+</view>
+<view class="bar4">
+<text>保障</text>
+<text class="qi">七天无理由退货-运费险</text>
+</view>
+<!-- footer -->
+<view class="footer">
+<view class="f1">
+<image class="img" src="/state/icon/售后(1).png"></image>
+<view>
+<!-- <text class="blk">店铺</text> -->
+</view>
+</view>
+<view class="f1">
+<image class="img" src="/state/icon/售后(1).png"></image>
+<view>
+<!-- <text class="blk">店铺</text> -->
+</view>
+</view>
+<view class="f1">
+<image class="img" src="/state/icon/售后(1).png"></image>
+<view>
+<!-- <text class="blk">店铺</text> -->
+</view>
+</view>
+<view class="f4">
+<button size="mini" type="primary" bindtap="addCar">加入购物车</button>
+</view>
+<view class="f5">
+<button size="mini" type="default" bindtap="buy" item="{{detailList}}" >立即购买</button>
+</view>
+</view>
+</view>

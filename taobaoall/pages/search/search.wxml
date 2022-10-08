@@ -1,0 +1,526 @@
+<view class="search_box">
+<view class="header">
+<view class="search_box_top">
+<view class="search_box_fixed">
+
+<view class="return" bindtap="returnSearch">
+<image src="/images/31.返回.png"></image>
+</view>
+
+<view class="search_box_search">
+<input type="search" name="" bindchange="getSearch" id="search" placeholder="口嗨套女"/>
+<image src="/images/12.拍照.png"></image>
+<view class="search_box_go">搜索</view>
+</view>
+
+</view>
+</view>
+</view>
+
+
+<view wx:if="{{lable==1}}">
+<view class="banner">
+
+<view class="history_search">历史搜索
+<image src="/images/32.删除.png"></image>
+</view>
+
+<view class="history_fund">荣耀10手机壳</view>
+<view class="history_fund">索尼数码相机</view>
+<view class="history_fund">桌面三脚架</view>
+<view class="history_fund">男短裤</view>
+<view class="history_fund">富士微单学生相机入门</view>
+<view class="history_fund">我的世界Java版</view>
+<view class="history_fund">4维空间旗舰店</view>
+<view class="history_fund">避孕套</view>
+<view class="history_fund">夏日T恤</view>
+<view class="history_fund">Vxc</view>
+
+<view class="history_search">搜索发现
+<image src="/images/33.小眼睛.png"></image>
+</view>
+
+<view class="history_fund">hypixel代购</view>
+<view class="history_fund">数码相机高清学生</view>
+<view class="history_fund">索尼a6000电池</view>
+<view class="history_fund">简约办公椅家用</view>
+<view class="history_fund">佳能EFM 18-150MM</view>
+<view class="history_fund">黄岩科技糖水枇杷罐头</view>
+<view class="history_fund">单反相机中画幅单反带</view>
+
+<scroll-view enable-flex class="move" scroll-x>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">淘宝热搜</view>
+<view class="text">今日热搜全知道</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">夏天穿这件好凉快</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">花样炫T恤</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">今年超火运动休闲风</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">casetify空山基</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">贵价与平价雪糕的区别</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">一热就脸红？</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">新手养猫买什么</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">高考报名</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">灭蚊黑科技</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">随时随地补充膳食纤维</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+</view>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">时髦穿搭</view>
+<view class="text">每日穿搭不重样</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">森系女孩OOTD</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">清冷感月下美人</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">pink甜酷少女</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">把这条裤子焊在身上</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">回头率超高蝴蝶吊带</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">直男眼里的小香风</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">日系女孩私藏品</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">遮肉显瘦必备</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">摇滚朋克酷girl</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">盛夏甜系情侣穿搭</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+</view>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">人气美妆</view>
+<view class="text">热门流行</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">打造光泽感底妆</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">一只唇釉双倍快乐</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">淡妆天花板来袭</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">让痘肌拥有自信感</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">全家的防晒都能搞定</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">拯救夏日干燥机</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">保湿焕亮爽肤水</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">毛流感一秒get</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">清洁首选泥膜</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">不化妆也要用的卸妆油</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+</view>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">吃货星人</view>
+<view class="text">美食不可辜负</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">夏天轻盈养生茶</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">糯叽叽星人无法接收</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">一袋开启你的甜蜜时光</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">当蜂蜜遇上薯片</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">腰果泡芙蓉</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">追剧吃什么</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">鲜玉米浆速食</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">午餐肉</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">一捏就碎纸皮核桃</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">把鹌鹑蛋盐焗掉扒</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+</view>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">二次元</view>
+<view class="text">脑洞大开</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">会唱歌的O嘴娃娃</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">动物森友会 集合！</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">跟小樱一起施展魔法吧</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">Q弹软绵 团子大家族</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">童年记忆里的蓝胖子</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">可爱狗狗为你撑腰</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">和美乐蒂一起吃下午茶</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">小黑和你一起</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">焦虑猫喊你别焦虑</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">光与夜之恋 浪漫</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+</view>
+
+<view class="list">
+
+<view class="head">
+<image src="/images/35.皇冠.png" class="crown"></image>
+<view class="title">新趋热点</view>
+<view class="text">今日热搜全知道</view>
+<image class="right" src="/images/38.右.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: red;">1</view>
+<view class="content">质感T恤分享</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #fe9b01;">2</view>
+<view class="content">简约气质连衣裙</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #ffc018;">3</view>
+<view class="content">霸街神裤</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+
+<view class="son">
+<view class="order" style="background-color: #d0a489;">4</view>
+<view class="content">超抵卡自制冰淇淋</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">5</view>
+<view class="content">为什么夏天要勤敷面膜？</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">6</view>
+<view class="content">时尚防晒衣</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">7</view>
+<view class="content">巨可爱大肚肚水杯</view>
+<image class="end" src=""></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489">8</view>
+<view class="content">大汉星人刚需</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/34.下降.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color:#d0a489;">9</view>
+<view class="content">自带果香 身体乳</view>
+<image class="end" src="/images/39.新.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+<view class="son">
+<view class="order" style="background-color: #d0a489;">10</view>
+<view class="content">来自出生当天的报纸</view>
+<image class="end" src="/images/36.热.png"></image>
+<image class="up_down" src="/images/37.上升.png"></image>
+</view>
+
+</view>
+
+</scroll-view>
+
+<view class="hidden">
+<image src="/images/33.小眼睛.png"></image>
+<view>隐藏全网热榜</view>
+</view>
+
+<view class="speak">
+  <image class="speak" src="/images/40.麦克风.png"></image>
+</view>
+
+</view>
+</view> 
+<view wx:else class="none_hidden" >
+<view class="shop_list" wx:for="{{shop_arr}}">
+<image class="shop_pic" src="{{item.goods_big_logo}}"></image>
+<view class="shop_name">{{item.goods_name}}</view>
+<view class="shop_price">￥{{item.goods_price}}元</view>
+</view>
+</view> 
+</view>
+
+
+

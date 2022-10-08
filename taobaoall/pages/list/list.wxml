@@ -1,0 +1,12 @@
+<view class="main">
+<view class="main_item"
+wx:for="{{buyList}}"
+wx:key="id"
+>
+<view>
+<image src="{{item.pic}}"></image>
+</view>
+<text class="name">{{item.name}}</text>
+<text>{{item.price}}元</text>
+</view>
+</view>

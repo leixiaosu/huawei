@@ -1,0 +1,72 @@
+<!--pages/type/type.wxml-->
+<view class="search">
+  <view class="find"><image src="//csdnimg.cn/cdn/content-toolbar/csdn-sou.png?v=1587021042"></image></view>
+  <view class="inp"><input type="text" value="热门搜索" /></view>
+  <view class="photo"><image src="https://img0.baidu.com/it/u=3588769304,2233009436&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image></view>
+</view>
+<view class="contain">
+  <!-- <scroll-view scroll-y="true" class="scr1"> -->
+  <view class="left">
+    <view bindtap="a" data-flag="0" wx:if="flag=0"
+    class="{{click0? 'active':'' }}" 
+    >推荐</view>
+    <view bindtap="a" data-flag="1" wx:if="flag=1" 
+    class="{{click1? 'active':'' }}" 
+    >食品</view>  
+    <view bindtap="a" class="{{gray? 'active':'' }}" wx:for="{{arr}}" wx:key="flag" data-flag="{{item.flag}}">
+    {{item.title}}
+    </view>
+  </view> 
+  <!-- </scroll-view> -->
+
+  <view class="right">
+    <view class="things" wx:if="{{flag0}}">
+      <view class="hot">热门商品</view>
+      <view class="box">
+        <view class="goods" wx:for="{{allArr}}" wx:key="name">
+          <image src="{{item.image_src}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+        <view class="goods" wx:for="{{dataAll}}" wx:key="name" >
+          <image src="{{item.image}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="things" wx:if="{{flag1}}">
+      <view class="hot">本周热门</view>
+      <view class="box" >
+        <view class="goods" wx:for="{{dataEat}}" >
+          <image src="{{item.image}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+      <view class="hot">热门食品</view>
+      <view class="box" >
+        <view class="goods" wx:for="{{dataEat2}}" >
+          <image src="{{item.image}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="things" wx:for="{{arr}}" wx:if="{{flag==item.flag}}" wx:key="flag">
+      <view class="hot">本周热门</view>
+      <view class="box" >
+        <view class="goods" wx:for="{{dataAll}}" >
+          <image src="{{item.image}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+      <view class="hot">热门{{item.title}}</view>
+      <view class="box" >
+        <view class="goods" wx:for="{{allArr}}" 
+        wx:key="id"
+        >
+          <image src="{{item.image_src}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

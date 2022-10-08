@@ -1,0 +1,122 @@
+/* 头部 */
+.header{
+  height: 180rpx;
+  /* background-color: gray; */
+  display: flex;
+  line-height: 180rpx;
+}
+.red{
+  color: white;
+  background-color: red;
+}
+.header_right{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header_right_1{
+  display: flex;
+  flex-direction: column;
+}
+.header_right_1 text{
+  height: 50rpx;
+  line-height: 130rpx;
+}
+.zi{
+  border: 1px solid gray;
+  border-radius: 30rpx;
+}
+.img1{
+margin-top: 25%;
+width: 130rpx;
+height: 120rpx;
+border-radius: 50%;
+margin-right: 20rpx;
+}
+.header_right_2{
+  position: relative;
+}
+.header_right_2 text{
+  border: 1px solid gray;
+  border-radius: 30rpx;
+  padding: 0 10rpx;
+}
+.header_right_2 .hong{
+  position: absolute;
+  width: 90rpx;
+  height: 90rpx;
+  top: 50rpx;
+  right: 160rpx;
+}
+/* 省钱月卡 */
+.save{
+  margin-top: 5rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: rgb(250, 238, 238);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.juan{
+  border: 1px solid gray;
+  border-radius: 30rpx;
+  padding: 0 10rpx;
+}
+/* 订单 */
+.shopers{
+  margin-top: 5rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* 导航1 */
+.bar{
+  margin-bottom: 10rpx;
+  border-bottom: 1px solid gray;
+  height: 130rpx;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.bar1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar1 image{
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 精品推荐 */
+.recommend{
+  background-color: rgb(250, 238, 238);
+  border-radius: 30rpx;
+  margin-top: 5rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+/* 内容 */
+.content{
+  height: 240rpx;
+  display: flex;
+  margin-top: 34rpx;
+}
+.content_item{
+  text-align: center;
+  width: 50%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+image{
+  height: 130rpx;
+  width: 150rpx;
+  margin-left: 8%;
+}

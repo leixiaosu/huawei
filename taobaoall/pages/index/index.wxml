@@ -1,0 +1,215 @@
+<view class="taobao_box">
+
+<view class="fixed">
+  <view class="fixed_header">
+
+    <view class="fixed_header1">
+  <view class="sign_in header_position">
+  <image class="sign_in_pic" src="/images/24.签到.png"></image>
+  <text class="header1_common2">签到</text>
+  </view>
+
+<view class="subscrible header_position header1_common1" bindtap="show_hidden1">订阅</view>
+<view class="introduce header_position header1_common1" bindtap="show_hidden2">推荐</view>
+
+<view class="vip_pic header_position">
+<image class="vip_pics" src="/images/1.二维码.png"></image>
+<text class="header1_common2">会员码</text>
+</view>
+</view>
+
+<view class="search" bindtap="getSearch">
+<image class="two_dimensional search_float" src="/images/15.扫一扫.png"></image>
+<input class="search_float" type="search" bindchange="getSearch" name="" placeholder="鸿星尔克一人之下" id="search_input"/>
+<image class="photograph search_float" src="/images/12.拍照.png"></image>
+<view class="search_float but" >搜索</view>
+</view>
+
+</view>
+</view>
+
+<view wx:if="{{lable==1}}">
+
+<scroll-view class="middle_box"  show-scrollbar="true" scroll-with-animation="true" enable-flex scroll-x>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/14.天猫U先.png"></image>
+<text class="middle_box_text">天猫U先</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/4.充值中心.png"></image>
+<text class="middle_box_text">充值中心</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/10.今日爆款.png"></image>
+<text class="middle_box_text">今日爆款</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/16.海鲜达.png"></image>
+<text class="middle_box_text">海鲜达</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/5.芭芭农场.png"></image>
+<text class="middle_box_text">芭芭农场</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/18.领淘宝币.png"></image>
+<text class="middle_box_text">领淘宝币</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/19.天猫国际.png"></image>
+<text class="middle_box_text">天猫国际</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/11.阿里拍卖.png"></image>
+<text class="middle_box_text">阿里拍卖</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/3.天猫超市.png"></image>
+<text class="middle_box_text">天猫超市</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/8.分类.png"></image>
+<text class="middle_box_text">分类</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/7.饿了么.png"></image>
+<text class="middle_box_text">饿了么</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/20.飞猪旅行.png"></image>
+<text class="middle_box_text">飞猪旅行</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/6.淘宝吃货.png"></image>
+<text class="middle_box_text">淘宝吃货</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/23.闲鱼.png"></image>
+<text class="middle_box_text">闲鱼</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/21.淘票票.png"></image>
+<text class="middle_box_text">淘票票</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/22.天猫好药.png"></image>
+<text class="middle_box_text">天猫好药</text>
+</view>
+</view>
+<view class="list">
+  <view class="middle_box_list">
+<image class="middle_box_pic" src="/images/17.土货鲜食.png"></image>
+<text class="middle_box_text">土货鲜食</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/13.天猫汽车.png"></image>
+<text class="middle_box_text">天猫汽车</text>
+</view>
+</view>
+<view class="list">
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/2.天猫好房.png"></image>
+<text class="middle_box_text">天猫好房</text>
+</view>
+<view class="middle_box_list">
+<image class="middle_box_pic" src="/images/9.更多.png"></image>
+<text class="middle_box_text">更多</text>
+</view>
+</view>
+</scroll-view>
+
+<view class="banner_box">
+    <image class="banner_box_pic" src="/images/25.banner.png"></image>
+</view>
+
+
+<view class='content'>
+<view class='left'>
+<swiper class="shops_move_pic" circular="true" interval="2000" indicator-dots="true" indicator-color="243, 243, 243" indicator-active-color="#e80a0e" autoplay="ture">
+<swiper-item>
+<image src="/images/26.move1.jpeg"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/27.move2.jpg"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/28.move3.jpeg"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/29.move4.jpeg"></image>
+</swiper-item>
+</swiper>
+  <view wx:for="{{leftList}}" wx:key="index" class="shops">
+
+    <image class='pic' style='height:{{item.CoverHeight}}' src='{{item.Cover}}'></image>
+    <text class="shop_name">{{item.name}}</text>
+
+    <view class="shop_middle">
+    <view class="shop_price">￥{{item.price}}卷后价</view>
+    <view class="buy_circumstance">{{item.count}}人付款</view>
+    <view class="shop_more1">
+    <image src="/images/30.更多.png"></image>
+    </view>
+    </view>
+
+ <view class="shop_bot">
+    <view class="shop_bot_preferential" wx:if="{{flag}}">3期免息</view>
+    </view>
+
+    <view class="shop_bot">
+    <view class="shop_bot_preferential">淘宝金币抵0.4元</view>
+    <image class="shop_more2" src="/images/30.更多.png"></image>
+    </view>
+
+  </view>
+</view>
+<view class='right'>
+<image class="pics" src="/images/26.天天特卖.png"></image>
+<image class="pic" src="/images/27.安卓游戏.png"></image>
+  
+  <view wx:for="{{rightList}}" wx:key="index" class="shops">
+    <image class='pic' style='height:{{item.CoverHeight}}' src='{{item.Cover}}'></image>
+
+    <text class="shop_name">{{item.name}}</text>
+
+<view class="shop_middle">
+<view class="shop_price">￥{{item.price}}卷后价</view>
+<view class="buy_circumstance">{{item.count}}人付款</view>
+<view class="shop_more1">
+<image src="/images/30.更多.png"></image>
+</view>
+</view>
+
+<view class="shop_bot">
+<view class="shop_bot_preferential">淘宝金币抵0.4元</view>
+<image class="shop_more2" src="/images/30.更多.png"></image>
+</view>
+
+  </view>
+</view>
+</view>
+
+</view>
+
+<view wx:else class="none_hidden">
+<image class="bg" src="https://tse4-mm.cn.bing.net/th/id/OIP-C.3HKXXlphGxqZLkk9_RyVtAAAAA?pid=ImgDet&rs=1"></image>
+<image src="/images/41.失望.png" class="disapp"></image>
+<view>你还没有任何订阅信息噢！</view>
+</view>
+
+</view>

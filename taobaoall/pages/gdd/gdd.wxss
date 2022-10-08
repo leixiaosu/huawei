@@ -1,0 +1,106 @@
+/* pages/type/type.wxss */
+.search {
+  width: 95%;
+  height: 60rpx;
+  background-color: #EDEDED;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+}
+.search .find{
+  width: 80rpx;
+  height: 60rpx;
+  background-color: #EDEDED;
+  margin-left: 130rpx;
+}
+.search .find image{
+  width: 80rpx;
+  height: 60rpx;
+}
+.search .inp{
+  width: 440rpx;
+  height: 50rpx;
+  font-size: 14px;
+  color: gray;
+  line-height: 60rpx;
+  background-color: #EDEDED;
+  border-radius: 5px;
+  margin-top: 10rpx;
+}
+.search .photo{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #EDEDED;
+  border-radius: 5px;
+}
+.search .photo image{
+  width: 60rpx;
+  height: 60rpx;
+  background-repeat: no-repeat;
+}
+
+.contain {
+  width: 100%;
+  /* height: 1500rpx; */
+  /* background-color: burlywood; */
+  display: flex;  
+}
+.contain .left {
+  /* width: 150rpx; */
+  /* height: 1100rpx; */
+  /* background-color: chocolate; */
+  flex: 1;
+}
+
+.contain .left view {
+  /* width: 150rpx; */
+  height: 135rpx;
+  text-align: center;
+  line-height: 135rpx;
+  border-bottom: 1px solid gainsboro;
+  background-color: #F8F8F8;
+}
+.contain .left .active{
+  background-color: white;
+  color: red;
+  border-left: 2px solid red;
+}
+
+.contain .right {
+  /* width: 600rpx; */
+  /* height: 800rpx; */
+  /* background-color: chartreuse; */
+  flex: 4;
+}
+
+.contain .right .things .hot{
+  width: 100%;
+  height: 80rpx;
+  font-weight: bold;
+  /* background-color: darkkhaki; */
+  line-height: 80rpx;
+}
+.contain .right .things .box{
+  width: 100%;
+  /* height: 700rpx; */
+  /* background-color: darkolivegreen; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contain .right .things .box .goods{
+  width: 180rpx;
+  height: 240rpx;
+  background-color: white;
+}
+.contain .right .things .box .goods image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.contain .right .things .box .goods .name{
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+  overflow: hidden;
+}

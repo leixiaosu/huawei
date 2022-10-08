@@ -1,0 +1,109 @@
+<view class="main">
+<!-- 头部 -->
+<view class="header">
+<view class="header_left">
+<image src="/state/icon/car_active.png"></image>
+<view class="car">
+<text>购物车抄作业</text>
+</view>
+</view>
+<view class="header_right">
+<text>来看别人购物车都买了啥？</text>
+</view>
+</view>
+<!-- 搜索 -->
+<view class="search">
+<input type="text" 
+bindchange="search"
+placeholder="输入商品的关键字"/>
+</view>
+<!-- 列表 -->
+<view class="list"
+wx:if="{{carList.length}}"
+>
+<view class="list_item"
+wx:for="{{carList}}"
+wx:key="id"
+> 
+<button type="primary" size="mini" bindtap="delete" id="{{item.id}}" class="delet">删除</button>
+<view class="list_item_left">
+<view class="all">
+<checkbox-group
+id="{{item.id}}" 
+>
+<checkbox
+bindtap="handleItem"
+id="{{item.id}}" 
+color="#d81e06"
+checked="{{item.done}}"
+></checkbox>
+</checkbox-group>
+</view>
+</view>
+<view class="list_item_middle">
+<image src="{{item.pic}}"></image>
+</view> 
+<view class="list_item_right">
+<view class="list_item_right1">
+<text class="name">{{item.name}}</text>  
+<text>库存紧张</text>
+</view>
+<view class="list_item_right2">
+<view>
+<text>${{item.price}}</text>
+</view>
+<view class="right">
+<button type="warn" size="mini" bindtap="add" id="{{item.id}}"
+done="{{item.done}}"
+>➕</button>
+<view><text>{{item.count}}件</text></view>
+<button type="warn" size="mini"  bindtap="sub" id="{{item.id}}"
+done="{{item.done}}"
+>➖</button>
+</view>
+</view>
+</view>
+</view>
+</view>
+<!-- 无商品 -->
+<view class="noneCar" wx:else>
+<text>暂无商品</text>
+</view>
+<!-- 底部 -->
+<view class="footer">
+<!-- 多选框 -->
+<view class="all">
+<checkbox-group
+bindchange="handleAll">
+<checkbox 
+color="#d81e06"
+checked="{{allChecked}}">全选</checkbox>
+</checkbox-group>
+</view>
+<!-- 计算 -->
+<view class="computed">
+<!-- 已选 -->
+<view class="computed_1">
+<text>已选{{allNum}}件</text>
+</view>
+<!-- 合计 -->
+<view class="allPrice">
+<view class="allprice_top">
+<text>合计</text><text class="money">￥{{allPrice}}</text>
+</view>
+<view class="allprice_bottom">
+<text class="money small">查看明细</text>
+</view>
+</view>
+<!-- 结算 -->
+<view class="buy">
+<button 
+type="primary" 
+class="allBuy" 
+size="mini"
+bindtap="jie"
+>购买</button>
+</view>
+</view>
+</view>
+</view>

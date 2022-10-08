@@ -1,0 +1,124 @@
+<view class="main">
+<!-- 头部 -->
+<view class="header">
+<view class="img">
+<image class="img1" 
+src="{{userImage}}"
+bindtap="getUserProfile"
+></image>
+</view>
+<view class="header_right">
+<view class="header_right_1">
+<text>{{userInfo? userInfo.nickName:'未登录'}}</text>
+<br/>
+<text class="geng">{{userInfo? userInfo.language:'未知'}}</text>
+</view>
+<view class="header_right_2">
+<image class="hong" src="/state/icon/红包(1).png"></image>
+<text class="red" bindtap="tui">退出登录</text>
+</view>
+</view>
+</view>
+<!-- 省钱月卡 -->
+<view class="save">
+<view class="save_1">
+<text>省钱月卡</text>
+</view>
+<view class="save_2">
+<text class="juan">你有124元卷未领取</text>
+</view>
+</view>
+<!-- 订单 -->
+<view class="shopers">
+<text>我的订单</text>
+<text>查看全部 ></text>
+</view>
+<!-- 导航 -->
+<view class="bar">
+<view class="bar1">
+<image src="/state/icon/待付款(1).png"></image>
+<view><text>待付款</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/售后(1).png"></image>
+<view><text>待分享</text></view>
+</view>
+<view class="bar1" bindtap="goBuy">
+  <image src="/state/icon/未付款(1).png"></image>
+<view><text>未付款</text></view>
+</view>
+<view class="bar1" bindtap="goNoBuy">
+  <image src="/state/icon/包裹_发货_o(1).png"></image>
+<view><text>已购买</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/收藏-选中(1).png"></image>
+<view><text>评价</text></view>
+</view>
+</view>
+<!-- 导航2 -->
+<view class="bar">
+<view class="bar1">
+<image src="/state/icon/待付款(1).png"></image>
+<view><text>优惠卷</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/售后(1).png"></image>
+<view><text>商品收藏</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/包裹_发货_o(1).png"></image>
+<view><text>店铺关注</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/足迹(1).png"></image>
+<view><text>历史浏览</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/售后(1).png"></image>
+<view><text>退货售后</text></view>
+</view>
+</view>
+<!-- 导航3 -->
+<view class="bar">
+<view class="bar1">
+<image src="/state/icon/售后(1).png"></image>
+<view><text>多多果园</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/未付款(1).png"></image>
+<view><text>火车票</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/售后(1).png"></image>
+<view><text>收货地址</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/包裹_发货_o(1).png"></image>
+<view><text>官方客服</text></view>
+</view>
+<view class="bar1">
+  <image src="/state/icon/收藏-选中(1).png"></image>
+<view><text>设置</text></view>
+</view>
+</view>
+<!-- 精品推荐 -->
+<view class="recommend">
+<text>精选推荐</text>
+</view>
+<!-- 内容 -->
+<scroll-view class="content" enable-flex scroll-x>
+<view class="content_item"
+wx:for="{{recommendList}}"
+wx:key="cat_id"
+id="{{item.cat_id}}"
+bindtap="getDetail"
+>
+<view>
+<image src="{{item.children[0].children[0].cat_icon}}"></image>
+</view>
+<text>{{item.cat_name}}</text>
+<text>{{item.children[0].cat_id}}元</text>
+</view>
+</scroll-view >
+</view>

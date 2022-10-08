@@ -1,0 +1,276 @@
+.search_box{
+  width: 100%;
+  background-color:#d6d0d0 ;
+
+}
+.header{
+  width: 100%;
+  height: 110rpx;
+}
+.search_box_top{
+  position:fixed;
+  background-color:#d6d0d0;
+  width: 100%;
+  height: 110rpx;
+  padding:10rpx 25rpx;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.search_box_fixed{
+  position:relative;
+  width: 100%;
+  height: 95%;
+}
+.return{
+position:absolute;
+top:0rpx;
+left:0rpx;
+height: 100%;
+width: 80rpx;
+}
+.return image{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  height: 60%;
+}
+.search_box_search{
+  position: absolute;
+  top:0rpx;
+  left:90rpx;
+  border-radius: 50rpx;
+  height: 100%;
+  width: 615rpx;
+  background-color:white;
+}
+.search_box_search image{
+  position:absolute;
+  width: 100%;height: 100%;
+  top:10rpx;
+  right:150rpx;
+  height: 70rpx;
+  width: 70rpx;
+}
+#search{
+  position:absolute;
+  top:0rpx;
+  left:35rpx;
+  height: 100%;
+  outline: none;
+  font-size: 33rpx;
+  color:rgb(66, 61, 61);
+}
+.search_box_go{
+  position:absolute;
+  top:5rpx;
+  right:5rpx;
+  height: 90%;
+  width: 140rpx;
+  background-color: #ff7305;
+  color:whitesmoke;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 50rpx;
+  font-size: 37rpx;
+}
+.banner{
+  width: 100%;
+  padding:40rpx 20rpx 100rpx 20rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  background-color: rgb(248, 246, 246);
+}
+.history_search{
+  position:relative;
+  width: 100%;
+  height: 30rpx;
+  font-size: 37rpx;
+  color:black;
+  font-weight: bolder;
+  margin-bottom:40rpx;
+}
+.history_search image{
+  position:absolute;
+  top:0rpx;
+  right:40rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.history_fund{
+  display: inline-block;
+  height: 40rpx;
+  padding:15rpx;
+  border-radius: 50rpx;
+  background-color: #ebebeb;
+  margin:0rpx 30rpx 30rpx 0rpx;
+  font-size: 30rpx;
+}
+.move{
+  display: flex;
+  height:960rpx;
+  margin-bottom: 30rpx;
+}
+.list{
+  flex-shrink: 0;
+  border-radius: 40rpx;
+  padding:30rpx 15rpx;
+  height:960rpx;
+  width: 530rpx;
+  margin-right:30rpx;
+  background-image: linear-gradient(to bottom, rgb(243, 230, 230) , rgb(243, 243, 171));
+}
+.head{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+}
+.crown{
+  width: 50rpx;height: 50rpx;
+  float:left;
+  margin:15rpx;
+}
+.title{
+  display: inline;
+  color:#c69e7c;
+  font-size:38rpx;
+  margin-right:15rpx;
+}
+.text{
+  display: inline;
+  font-size:28rpx;
+  color:#bc8d67;
+}
+.right{
+  width: 50rpx;height: 50rpx;
+  float:right;
+  margin:20rpx 0rpx;
+}
+.son{
+  position:relative;
+  width: 100%;
+  height: 80rpx;
+  line-height:80rpx;
+  border-bottom: 2rpx solid rgb(231, 229, 229);
+}
+.order{
+  /* display: inline; */
+  width: 40rpx;
+  height: 40rpx;
+  float:left;
+  text-align: center;
+  line-height:40rpx;
+  margin:20rpx 15rpx 15rpx 15rpx;
+  color:white;
+  font-size:30rpx;
+  border-radius: 10rpx;
+}
+.content{
+  display:inline;
+  height: 100%;
+  margin-right:15rpx;
+  font-size: 35rpx;
+}
+.end{
+  position:absolute;
+  top:25rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+.up_down{
+  position:absolute;
+  top:25rpx;
+  right:0rpx;
+  width: 45rpx;height: 45rpx;
+  float:right;
+}
+.hidden{
+  position: relative;
+  margin:30rpx 0rpx;
+  border:1rpx solid rgb(165, 164, 164);
+  height: 40rpx;
+  width: 230rpx;
+  border-radius: 20rpx;
+  padding:5rpx;
+  /* box-sizing: border-box; */
+  font-size: 28rpx;
+}
+.hidden view{
+  position: absolute;
+  top:5rpx;
+  right:10rpx;
+}
+.hidden image{
+  position:absolute;
+  top:5rpx;
+  left:10rpx;
+height: 40rpx;width: 40rpx;
+}
+.speak{
+  position:fixed;
+  bottom: 0rpx;
+  left:50%;
+  width: 100%;
+  height: 90rpx;
+  background-color: #f8f6f6;
+  transform: translate(-50%,0rpx);
+  border-top-left-radius: 1000rpx;
+  border-top-right-radius: 1000rpx;
+  
+}
+.speak image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.none_hidden{
+  width: 100%;
+  background-color:white;
+  padding:30rpx 10rpx 30rpx 10rpx;
+  box-sizing: border-box;
+}
+.shop_list{
+  position:relative;
+  display: inline-block;
+  width: 48%;
+  height: 500rpx;
+  margin:0rpx 15rpx 20rpx 0rpx;
+  border-radius: 20rpx;
+  background-color: whitesmoke;
+}
+.shop_pic{
+  position: absolute;
+  top:0rpx;
+  left:0rpx;
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.shop_name{
+  position:absolute;
+  left:50%;
+  bottom:63rpx;
+  transform: translate(-50%,0rpx);
+  width: 100%;
+  font-size:35rpx;
+  height: 12%;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  padding:5rpx 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 38rpx;
+  
+}
+.shop_price{
+  position:absolute;
+  left:50%;
+  transform: translate(-50%,0rpx);
+  bottom:0rpx;
+  width: 100%;
+ height: 13%;
+ line-height: 60rpx;
+  text-align: center;color:red;
+}
